@@ -1,0 +1,11 @@
+[Unit]
+Description=wonderphone
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/sudo /usr/bin/python3 /home/pi/Desktop/payphone.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
